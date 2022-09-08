@@ -2,4 +2,4 @@
 
 Random text lines
 
-[Link label test] (https://bootcamp.perprogramera.com/)
+[Link label test](https://bootcamp.perprogramera.com/)
