@@ -1,4 +1,4 @@
-#My first GIT Repository
+# My first GIT Repository
 
 Random text lines
 
