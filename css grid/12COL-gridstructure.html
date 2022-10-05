@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --grid-width: 960px;
+        
+        }
+        *{
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: var(--grid-width);
+            height:100px;
+            margin: auto auto;
+            background-color:rgb(98, 0, 255);
+            overflow:auto;
+        }
+
+        .container div{
+            float: left;
+            height: 100px;
+            border: 5px dashed olive;
+        }
+
+        .col1{
+            width: calc(960px / 12);
+            background-color: yellow;
+            
+        }
+
+        .col2{
+            width: calc(960px / 11);
+            background-color: rgb(29, 211, 150);
+            
+        }
+
+        .col3{
+            width: calc(960px / 10);
+            background-color: rgb(190, 66, 28);
+            
+        }
+
+        .col4{
+            width: calc( var(--grid-width) / 9);
+            background-color: rgb(13, 197, 59);
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col1"></div>
+        <div class="col2"></div>
+        <div class="col3"></div>
+        <div class="col4"></div>
+    </div>
+    
+</body>
+</html>

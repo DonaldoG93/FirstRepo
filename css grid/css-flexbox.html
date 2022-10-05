@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        .parent-container {
+        width: 600px;
+        height: 400px;
+        border: 1px solid black;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items:center;
+        flex-direction:row  ;
+        }
+
+        .children{
+            width: 80px;
+            border: 1px solid red;
+            background-color:rgb(103, 157, 201);
+            height:20px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="parent-container">
+        <div class="children"></div>
+        <div class="children"></div>
+        <div class="children"></div>
+        <div class="children"></div>
+        <div class="children"></div>
+        <!-- <div class="children"></div>
+        <div class="children"></div>
+        <div class="children"></div>
+        <div class="children"></div>
+        <div class="children"></div> -->
+    </div>
+</body>
+</html>
