@@ -2,4 +2,41 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;}
+
+header{
+    display: flex;
+    height: 100px;
+}
+
+header div.logo{
+    display: flex;
+    width:20%;
+    justify-content: left;
+    align-items: center;
+    padding: 15px 10px 10px 50px;
+  }
+
+header div.main-menu{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ul.main-menu{
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+}
+
+
+
+header div.apt{
+    width:20%;
+}
+
+img.logo{
+    height: 80px;
+}
