@@ -6,19 +6,21 @@
 
 header{
     display: flex;
+    justify-content: space-between;
     height: 100px;
+    background-image: url('./Assets/otherpatterns/pattern.jpg');
+    background-repeat: repeat;
 }
 
 header div.logo{
     display: flex;
-    width:20%;
+   
     justify-content: left;
     align-items: center;
     padding: 15px 10px 10px 50px;
   }
 
 header div.main-menu{
-    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,14 +29,17 @@ header div.main-menu{
 
 ul.main-menu{
     display: flex;
-    gap: 10px;
+    gap: 25px;
     list-style-type: none;
 }
 
 
 
 header div.apt{
-    width:20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 50px 10px 10px;
 }
 
 img.logo{
