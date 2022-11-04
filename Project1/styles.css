@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;}
+
+
+
+    :root{
+        --h-orange: #F89E4A;
+        --h-brown: #544646;
+        --h-grey: #7A7A7A;
+        --h-white: #F0F0F0;
+        --menu-font-color: #39393d;
+        --menu-font-hover: #EFA765;
+
+
+    }
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background-image: url('./Assets/otherpatterns/pattern.jpg');
+    background-repeat: repeat;
+}
+
+header div.logo{
+    display: flex;
+   
+    justify-content: left;
+    align-items: center;
+    padding: 15px 10px 10px 50px;
+  }
+
+header div.main-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+
+ul.main-menu{
+    display: flex;
+       list-style-type: none;
+       gap: 25px;
+}
+
+
+
+header div.apt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+img.logo{
+    height: 80px;
+}
+
+nav ul li a{
+    font-family: 'Teko', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: 6px;
+    color: var(--menu-font-color);
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+div.apt a{
+    font-family: 'Teko', sans-serif;
+    font-size: 19px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--h-orange);
+    text-decoration: none;
+    border: 1px solid var(--h-orange);
+    padding: 10px 20px 10px;
+    border-radius: 26px;
+    }
+
+nav ul li a:hover{
+    font-family: 'Teko', sans-serif;
+    font-weight: 300;
+    letter-spacing: 6px;
+    color: var(--menu-font-hover);
+    text-decoration: none;
+    transition: all .5s;
+    text-shadow: #141313 ;
+}
+
+nav ul li:hover {
+transform: scale(1.15 ,1.15);
+transform: translate (0px, 5px);
+transition: all .5s;;
+}
