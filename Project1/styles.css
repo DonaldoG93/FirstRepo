@@ -86,6 +86,8 @@ div.apt a{
     border: 1px solid var(--h-orange);
     padding: 10px 20px 10px;
     border-radius: 26px;
+    position: relative;
+    right: 30%;
     }
 
     div nav a.active{
@@ -152,27 +154,67 @@ main div {
         background-size: cover;
     }
 
-    .thebutton{
-        color: var(--h-orange);
-        text-transform: uppercase;
-        text-decoration: none;
-        font-family: 'Teko';
-        font-size: 29px;
-        font-weight: 500;
-        letter-spacing: 3px;
-        padding: 14px 28px;
-        border-top: 1px solid var(--h-orange);
-        border-bottom: 1px solid var(--h-orange);
-        border-radius:  0px 30px  0px 30px;
-        transition: ease-in-out 0.5s;
-        
-    }
+.thebutton{
+    color: var(--h-orange);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Teko';
+    font-size: 29px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    padding: 14px 28px;
+    border-top: 1px solid var(--h-orange);
+    border-bottom: 1px solid var(--h-orange);
+    border-radius:  0px 30px  0px 30px;
+    transition: ease-in-out 0.5s;
+    
+}
 
-    .thebutton:hover{
-       -webkit-transform: scale(0.9);
-       background-color: var(--button-hover);
-    }
+.thebutton:hover{
+    -webkit-transform: scale(0.9);
+    background-color: var(--button-hover);
+}
+
+.intro{
+       display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 85px 30% 50px 30%;
+    gap: 25px;
+    background-image: url(./Assets/otherpatterns/pattern.jpg);
+    background-repeat: repeat;
+}
+
+.brush{
+   width: 30px;
+}
+
+.intro h1{
+    font-size: 28px;
+    font-family: 'Teko';
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    color: var(--h-brown);
+}
+
+div.overlayt{
+    background-image: url(./Assets/otherpatterns/png\ top\ border.png);
+    background-repeat: repeat-x;
+    height: 55px;
+    background-size: contain;
+    background-color: #4109a800;
+    z-index: 5;
+    margin-bottom: -25px;
+}
 
 
-
-
+#section-2{
+    padding-top: 230px;
+        background-image:url(./Assets/Images/section\ 2\ bg.JPG);
+       background-position: center;
+       background-repeat: none;
+       background-size: cover;
+       position: relative;
+}
