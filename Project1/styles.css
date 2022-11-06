@@ -62,6 +62,7 @@ header div.apt{
 
 img.logo{
     height: 80px;
+    max-width: 300px;
 }
 
 nav ul li a{
