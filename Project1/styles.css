@@ -261,11 +261,6 @@ div.overlayt{
     
 }
 
-div.s-up-breaker svg{
-    fill: white;
-    width: 25px;
-   }
-
 #section-2 div div{
     display: flex;
     justify-content: center;
@@ -273,13 +268,11 @@ div.s-up-breaker svg{
    
 }
 
-.s-up-breaker{
+section div{
     display: flex;
-    width: 500px;
-    }
-
-
-#Capa_1::before{
-    content: <span> mir mir dak plak </span>;
-    color: var(--h-white);
+    justify-content: center;
+    align-items: center;
 }
+
+
+
