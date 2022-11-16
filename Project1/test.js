@@ -55,8 +55,14 @@ console.log(factorial(5));
 
 // 1. 5 * factorial (4) = 5 * 24 = 120
 
+function power(a, b) {
+   if (b === 0) return 1;
+   
+      return a * power(a, b-1)
+   
+}
 
-
+console.log (power(4, 3));
 
 
 
