@@ -9,38 +9,38 @@
 // power(2,3);
 
 
-function factorial  
-function factorial (a){
-      if(a == 0 || a == 1){
-    return 1;
- } else{
-     return a *factorial (a-1);
-        }
-}
+// function factorial  
+// function factorial (a){
+//       if(a == 0 || a == 1){
+//     return 1;
+//  } else{
+//      return a *factorial (a-1);
+//         }
+// }
 
-console.log(factorial(5));
+// console.log(factorial(5));
 
 
-RUN factorial(5)
+// RUN factorial(5)
 
-1 is (a == 0 || a == 1) => No  
+// 1 is (a == 0 || a == 1) => No  
 
-   then return a *factorial (5-1);  /*a=4 */
- ///           5 * factorial (4) 
-2 is (a == 0 || a == 1) => No  
-   then return  a *factorial (4-1);  /*a=3 */
-///             4 * factorial (3) 
+//    then return a *factorial (5-1);  /*a=4 */
+//  ///           5 * factorial (4) 
+// 2 is (a == 0 || a == 1) => No  
+//    then return  a *factorial (4-1);  /*a=3 */
+// ///             4 * factorial (3) 
 
-3 is (a == 0 || a == 1) => No  
-   then return  a *factorial (3-1);  /*a=2 */
-   ///             3 * factorial (2) 
+// 3 is (a == 0 || a == 1) => No  
+//    then return  a *factorial (3-1);  /*a=2 */
+//    ///             3 * factorial (2) 
 
-4 is (a == 0 || a == 1) => No  
-   then return  a *factorial (2-1);  /*a=1 */
- ///             2 * factorial (1)   
+// 4 is (a == 0 || a == 1) => No  
+//    then return  a *factorial (2-1);  /*a=1 */
+//  ///             2 * factorial (1)   
 
-5 is (a == 0 || a == 1) => Yes  
-   then return  1 
+// 5 is (a == 0 || a == 1) => Yes  
+//    then return  1 
 
 
    // BACKWAY (stack exec)
@@ -184,14 +184,50 @@ RUN factorial(5)
 // console.log(sum2(arr2))
 
 
-let a= "Bootcamp";
-let b = [];
+// let a= "Bootcamp";
+// let b = [];
 
-function StrReverse (myString){
-   for(let i=0; i < myString.length; i++){
-   b.unshift(myString[i]);
+// function StrReverse (myString){
+//    for(let i=0; i < myString.length; i++){
+//    b.unshift(myString[i]);
+//    }
+//    return b.join("");
+// }
+
+// console.log(sum2(arr2))
+
+
+//classa ATM
+//properties: avaliable_amount
+//methods: bilance, deposit, withdraw
+
+
+class BankAccount {
+   //properties: avaliable_amount
+   constructor(available_amount){
+       this.available_amount = available_amount;
    }
-   return b.join("");
+//methods: bilance, deposit, withdraw
+   bialnce(){
+      return console.log(this.available_amount);
+   }
+   
+   deposit(amount){
+      if(amount <= 0 ) throw "Negative amount is not valid!";
+      console.log(this.available_amount += amount);
+   }
+
+   withdraw(amount){
+      if(amount > this.available_amount) throw console.log("the required amount is not available, you can withdraw max: " +this.available_amount);
+      console.log(this.available_amount -= amount);
+   }
+
 }
 
-console.log(sum2(arr2))
+// krijojme objektin nga BankAccount class
+
+let donaldo_Account = new BankAccount(4400);
+
+donaldo_Account.bialnce();
+donaldo_Account.deposit(6600);
+donaldo_Account.withdraw(8000);
