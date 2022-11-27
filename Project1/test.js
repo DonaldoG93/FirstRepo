@@ -9,81 +9,58 @@
 // power(2,3);
 
 
-// function factorial  
-// function factorial (a){
-//       if(a == 0 || a == 1){
-//     return 1;
-//  } else{
-//      return a *factorial (a-1);
-//         }
-// }
+function factorial  
+function factorial (a){
+      if(a == 0 || a == 1){
+    return 1;
+ } else{
+     return a *factorial (a-1);
+        }
+}
 
-// console.log(factorial(5));
-
-
-// RUN factorial(5)
-
-// 1 is (a == 0 || a == 1) => No  
-
-//    then return a *factorial (5-1);  /*a=4 */
-//  ///           5 * factorial (4) 
-// 2 is (a == 0 || a == 1) => No  
-//    then return  a *factorial (4-1);  /*a=3 */
-// ///             4 * factorial (3) 
-
-// 3 is (a == 0 || a == 1) => No  
-//    then return  a *factorial (3-1);  /*a=2 */
-//    ///             3 * factorial (2) 
-
-// 4 is (a == 0 || a == 1) => No  
-//    then return  a *factorial (2-1);  /*a=1 */
-//  ///             2 * factorial (1)   
-
-// 5 is (a == 0 || a == 1) => Yes  
-//    then return  1 
+console.log(factorial(5));
 
 
-//    // BACKWAY (stack exec)
+RUN factorial(5)
 
-// // 5. factorial (1) = 1 /* from base statement*/
+1 is (a == 0 || a == 1) => No  
 
-// // 4. 2 * factorial (1) => 2* 1 = 2    /*  facttorial(2) = 2 */
+   then return a *factorial (5-1);  /*a=4 */
+ ///           5 * factorial (4) 
+2 is (a == 0 || a == 1) => No  
+   then return  a *factorial (4-1);  /*a=3 */
+///             4 * factorial (3) 
 
-// // 3. 3 * factorial(2) = 3*2 = 6  /* factorial(3) = 6 */
+3 is (a == 0 || a == 1) => No  
+   then return  a *factorial (3-1);  /*a=2 */
+   ///             3 * factorial (2) 
 
-// // 2. 4 * factorial (3) = 4 *6  /*factorial(4) = 24 */
+4 is (a == 0 || a == 1) => No  
+   then return  a *factorial (2-1);  /*a=1 */
+ ///             2 * factorial (1)   
 
-// // 1. 5 * factorial (4) = 5 * 24 = 120
+5 is (a == 0 || a == 1) => Yes  
+   then return  1 
 
-// // function power(a, b) {
-// //    if (b === 0) return 1;
+
+   // BACKWAY (stack exec)
+
+// 5. factorial (1) = 1 /* from base statement*/
+
+// 4. 2 * factorial (1) => 2* 1 = 2    /*  facttorial(2) = 2 */
+
+// 3. 3 * factorial(2) = 3*2 = 6  /* factorial(3) = 6 */
+
+// 2. 4 * factorial (3) = 4 *6  /*factorial(4) = 24 */
+
+// 1. 5 * factorial (4) = 5 * 24 = 120
+
+// function power(a, b) {
+//    if (b === 0) return 1;
    
-// //       return a * power(a, b-1)
+//       return a * power(a, b-1)
    
-// // }
-
-// // console.log (power(4, 3));
-
-
-// // 1. Të shkruhet programi që llogaritë ndryshimin e shumës së numrave çift dhe tek nga 1 deri në 10
-
-// // 1 2 3 4 5 6 7 8 9 10
-// // Çift: 2 4 6 8 10 = shuma: 30
-// // Tek: 1 3 5 7 9 = shuma 25
-// // Rezultati final: 30 – 25 = 5
-
-
-// // function dif (a){
-//    let c = 0;
-//    let t = 0;
-//    let res
-//    for (let i = 0; i <= 10 ; i++){
-//    if(i%2 == 0)
-//       c+=i
-//    else
-//     t+=i
 // }
-//  res = c-t 
 
 // // console.log(res);
 
@@ -217,4 +194,4 @@ function StrReverse (myString){
    return b.join("");
 }
 
-console.log(StrReverse(a));
+console.log(sum2(arr2))
