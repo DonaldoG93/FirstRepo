@@ -284,4 +284,6 @@
 //    }
 // }
 
-// let acc1 = new Card (BKT)
+donaldo_Account.bialnce();
+donaldo_Account.deposit(6600);
+donaldo_Account.withdraw(8000);
