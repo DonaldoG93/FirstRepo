@@ -77,6 +77,18 @@
 
 // // console.log(shuma);
 
+// let programi = (x,y) => {
+//    let sum = 0;
+//    for(let i =x; i<=y; i++){
+//      if(i%2==0){
+//        sum+=i
+//      }
+//    }
+//    return sum; 
+//  }
+ 
+//  console.log(programi(55,99 ));
+
    
 // // 3. Të shkruhet programi që gjenë numrin më të madh të plotpjestueshëm me 3 dhe 6 nga rangu i numrave 0 deri në 100
 
@@ -197,37 +209,79 @@
 // console.log(sum2(arr2))
 
 
-//classa ATM
-//properties: avaliable_amount
-//methods: bilance, deposit, withdraw
+// classa BankAccount
+// properties: avaliable_amount
+// methods: bilance, deposit, withdraw
 
 
-class BankAccount {
-   //properties: avaliable_amount
-   constructor(available_amount){
-       this.available_amount = available_amount;
-   }
-//methods: bilance, deposit, withdraw
-   bialnce(){
-      return console.log(this.available_amount);
-   }
+// class BankAccount {
+//    //properties: avaliable_amount
+//    constructor(available_amount){
+//        this.available_amount = available_amount;
+//    }
+// //methods: bilance, deposit, withdraw
+//    balance(){
+//       return console.log(this.available_amount);
+//    }
    
-   deposit(amount){
-      if(amount <= 0 ) throw "Negative amount is not valid!";
-      console.log(this.available_amount += amount);
-   }
+//    deposit(amount){
+//       if(amount <= 0 ) throw "Negative amount is not valid!";
+//       console.log(this.available_amount += amount);
+//    }
 
-   withdraw(amount){
-      if(amount > this.available_amount) throw console.log("the required amount is not available, you can withdraw max: " +this.available_amount);
-      console.log(this.available_amount -= amount);
-   }
+//    withdraw(amount){
+//       if(amount > this.available_amount) throw console.log("the required amount is not available, you can withdraw max: " +this.available_amount);
+//       console.log(this.available_amount -= amount);
+//    }
 
-}
+// }
 
-// krijojme objektin nga BankAccount class
+// // // krijojme objektin nga BankAccount class
 
-let donaldo_Account = new BankAccount(4400);
+// let donaldo_Account = new BankAccount(4400);
 
-donaldo_Account.bialnce();
-donaldo_Account.deposit(6600);
-donaldo_Account.withdraw(8000);
+// donaldo_Account.balance();
+// donaldo_Account.deposit(6600);
+// donaldo_Account.withdraw(8000);
+
+
+
+
+
+// let lacat = [
+//    {emri: "esmeraldo", nickname:"belloebono", mosha: 12},
+//    {emri: "rexhinaldo", nickname:"pitbull", mosha: 18},
+//    {emri: "beni", nickname:"lali", mosha: 14}
+// ]
+// console.log(lacat.filter(x => x.mosha > 12));
+
+
+
+
+
+
+// class ATM{
+//    constructor(amount){
+//       this.amount = amount;
+
+//    }
+// }
+
+// class Card{
+//    constructor(bank, amount){
+//       this.bank = bank;
+//       this.amount= amount;
+//    }
+
+//    withdraw(amount){
+
+//       if (amount > this.amount) throw "not enough credit on your  balance"
+//       switch(this.bank){
+//          case "TEB":
+//             this.amount= 
+//       }
+
+//    }
+// }
+
+// let acc1 = new Card (BKT)
