@@ -65,7 +65,7 @@
 
 // console.log(typeof(name(2,2,2)))
 
-let vektori = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+// let vektori = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
 
 // console.log(`gjatesia e vektorit eshte ${vektori.length}`)
 // var a=0
@@ -99,19 +99,19 @@ let vektori = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
 // ushtrimi 1- gjeni shumen e numrave cift dhe tek ne arrayn e dhene dhe me pas prodhimin midis tyr
 
 
-let danoci=() => {
-    let sc=0
-    let st=0
-    let prodhimi= 1
+// let danoci=() => {
+//     let sc=0
+//     let st=0
+//     let prodhimi= 1
 
-    sc= vektori.filter(n=> n%2==0).reduce((s,n) =>s+n) 
-    st =vektori.filter(n=> n%2!=0).reduce((s,n) =>s+n)
-    prodhimi = st* sc
-    return console.log(`shume e numrave cift eshte ${sc}, ajo e numrave tek eshte  ${st} ndersa prodhimi mes tyre eshte ${prodhimi}`) ;
+//     sc= vektori.filter(n=> n%2==0).reduce((s,n) =>s+n) 
+//     st =vektori.filter(n=> n%2!=0).reduce((s,n) =>s+n)
+//     prodhimi = st* sc
+//     return console.log(`shume e numrave cift eshte ${sc}, ajo e numrave tek eshte  ${st} ndersa prodhimi mes tyre eshte ${prodhimi}`) ;
 
-}
+// }
 
-danoci()
+// danoci()
 
 // // ushtrimi 2. 
 // 2. Të shkruhet funksioni që llogaritë prodhimin e numrave të dhënë si argumente – numri i argumenteve nuk është i kufizuar
@@ -122,35 +122,35 @@ danoci()
 
 // me for loop
 
-function fprod(...args){
+// function fprod(...args){
 
-    let p=1
-    for(let i =0; i<args.length; i++){
-        p*=args[i]
-    }
-    return console.log(p)
-}
+//     let p=1
+//     for(let i =0; i<args.length; i++){
+//         p*=args[i]
+//     }
+//     return console.log(p)
+// }
 
-// me forEach
+// // me forEach
 
-function feprod(...args){
-    let p=1
-    args.forEach(element => p*= element);
-    return console.log("seni" + p);
-}
+// function feprod(...args){
+//     let p=1
+//     args.forEach(element => p*= element);
+//     return console.log("seni" + p);
+// }
 
-//me reduce
+// //me reduce
 
-function redprod(...args){
+// function redprod(...args){
     
-    console.log("reprod " +args.reduce((a,b) => b*=a));
+//     console.log("reprod " +args.reduce((a,b) => b*=a));
     
-}
+// }
 
 
-fprod(1,2,3,5)
-feprod(1,2,3,5)
-redprod(1,2,3,5)
+// fprod(1,2,3,5)
+// feprod(1,2,3,5)
+// redprod(1,2,3,5)
 
 // 3. Të shkruhet programi që llogaritë shumën e elementeve në pozicione (indekse) teke
 
@@ -159,15 +159,15 @@ redprod(1,2,3,5)
 
 // Shuma e elementeve: 50, 23, 3, 9
 
-let stek = (...args) =>{
+// let stek = (...args) =>{
     
-    console.log(args.filter((n,i) => i %2 == 0)
-    .reduce((a, b) => {return b+=a}, 0 ))
-    // or -.reduce((a, b) => {return b+=a}, 1 ))
-    // or -.reduce((a, b) => b+=a, 1 ))
-}
+//     console.log(args.filter((n,i) => i %2 == 0)
+//     .reduce((a, b) => {return b+=a}, 0 ))
+//     // or -.reduce((a, b) => {return b+=a}, 1 ))
+//     // or -.reduce((a, b) => b+=a, 1 ))
+// }
 
-stek(1,2,3,4,1,2,3,4)
+// stek(1,2,3,4,1,2,3,4)
 
 
 // 4. Të shkruhet programi që mapon (shumëzon me 2) vlerat çift të një vektori
@@ -176,36 +176,79 @@ stek(1,2,3,4,1,2,3,4)
 // Dalja: [20, 1, 3,  12,  9, 24]
 
 
-let x2 =(...args) =>{
- return args.map( 
-    n => (n%2==0) ? n*2 : n
-    )    
-}
+// let x2 =(...args) =>{
+//  return args.map( 
+//     n => (n%2==0) ? n*2 : n
+//     )    
+// }
 
 
-console.log(x2(2,2,2,2))
+// console.log(x2(2,2,2,2))
 
-// 5. Të shkruhet programi që mapon (shumëzon me 2) vlerat ne pozicionet çift të një vektori
-let px2 =(...args) =>{
- return args.map( 
-    (n,m) => (m%2!==0) ? n*2 : n
-    )    
-}
+// // 5. Të shkruhet programi që mapon (shumëzon me 2) vlerat ne pozicionet çift të një vektori
+// let px2 =(...args) =>{
+//  return args.map( 
+//     (n,m) => (m%2!==0) ? n*2 : n
+//     )    
+// }
 
-console.log("px2: " + px2(2,3,3,3));
+// console.log("px2: " + px2(2,3,3,3));
 
 
 
-let g = 0
+// let g = 0
 
-for(i = 0; i<= 200; i++){
-    if(i>9 && i<100 && i%3==0 && i%6==0){
-        g+=i;
-        console.log(i)
-    }
-}
+// for(i = 0; i<= 200; i++){
+//     if(i>9 && i<100 && i%3==0 && i%6==0){
+//         g+=i;
+//         console.log(i)
+//     }
+// }
 
-console.log(`kjo qenka jeta e g: ${g}`)
+// console.log(`kjo qenka jeta e g: ${g}`)
+
+
+// ***************** leksioni 21 *****************
+
+// programi qe inseron vlerat ne matrice ku permes promptit merren dimesnionet N te matrices 2 dimensionale katrore dhe permes promptit inputohen vlerat ne te
+
+// let n = parseInt(prompt("insero numrin e matrices:" ))
+// let matrica =2[]
+
+// for(i=0; i<n; i++){
+//     for(j=0; j<n; j++ ){
+//        matrica= prompt(`matrica [${i}: ${j}]: `)
+//        document.write(matrica+"  ")
+//     }
+//     document.write("<br/>")
+
+// }
+
+// shkruaj programin qe llogarit shumen e numrave te dhene ne nje single prompt psh 678 = 6+7+8
+ 
+
+
+
+// ---- me nje variabel "Sh" si helper ----------
+// let a = (s) =>  {
+//         let sh =0
+//        s.split('').forEach(element => {sh+=parseInt(element)
+        
+//        });
+//        return console.log(sh)
+// }
+
+
+// --------------- me 4 methods, split, map, parseInt & foreach ----------
+// let a = (s) =>  {
+
+//      console.log(s.split('').map( number => parseInt(number)).reduce((b,c)=> c+=b))
+     
+// }
+
+
+// a(prompt());
+
 
 
 
