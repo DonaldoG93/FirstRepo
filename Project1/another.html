@@ -249,8 +249,61 @@
 
 // a(prompt());
 
+// ----------------e shkruhet funksioni qe llogarit shume e numrave ku vlera  elementit eshte e njejte me indeksin e elementit ----------
+
+// ---------- zgjidhje me for loop ----------
+
+let nums = [1,2,3,3,15,6,32,81,8,19]
+
+// let calc =(a)=>{
+//     let s=0
+//     for(let i=0; i<a.length; i++){
+//         if(a[i]===i){
+//             s+=a[i]
+//         }
+//     }return console.log(s)
+
+// }
+
+// calc(nums)
+// ---------- zgjidhje me forEach ----------
+
+// let calc =(a)=>{
+//     let s =0 
+//   a.forEach(function(element, index){ 
+//   if(element == index){
+//     s+= element
+//   }});
+//   return console.log(s)
+
+// }
+
+// calc(nums)
 
 
+// ---------- zgjidhje me filter & reduce ----------
+
+// let calc = (a)=>{
+   
+//   return  console.log(a.filter((e,i) => e===i).reduce((s,i)=> s+i, 0))
+//   }
+
+
+// calc(nums)
+
+
+// te gjendet elementi me vleren me te madhe ne nje array
+// ----------- zgjidhje me forEach
+// function maks(a) {
+
+    
+//     a.forEach(element => {
+//         let max =0
+//         if(element>max){max=element}
+    
+// }) };
+
+console.log(Math.max(...nums))
 
 </script>
 </body>
