@@ -303,7 +303,78 @@ let nums = [1,2,3,3,15,6,32,81,8,19]
     
 // }) };
 
-console.log(Math.max(...nums))
+// console.log(Math.max(...nums))
+
+
+// function g(
+//     return [10,'hi']
+// )
+// function f(x,y, ...args){
+//     return [g(),x+y,y, args]
+// }
+
+
+// const [,a,b,c] = f(0)  ???? cfare vlerash marrin a, b dhe c?
+
+// function g()
+// {return [10,'hi']}
+
+// function f(x,y, ...args){
+//     return [g(),x+y,y,args]
+// }
+
+// const [,a,b,c] = f(1,2,3,4,5,7)
+
+
+// console.log(a,b,c)
+
+
+// ************************ LEKSIONI 22  OOP **************************
+// -------KLASAT------
+
+
+// let g = "aaj"
+// class Mace {
+//     constructor(rraca, mosha, ngjyra){
+//     this.rraca = rraca  
+//     this.mosha = mosha;
+//     this.ngjyra= ngjyra;
+//     this.mosha_nr=parseInt(mosha)
+//     this.fr = g
+//     }
+
+//     sayHi(){console.log(this.rraca )}
+// }
+
+// let mace = new Mace ("Persane", "22" , "black",)
+
+// console.log(mace.mosha)
+// mace.sayHi()
+
+
+// Ushtrimi te krijohet nje klase ATM me  properties: avaliable_amount  
+// dhe methods: balance, deposit, withdraw
+
+class ATM {
+    constructor (avaliable_amount){
+        this.avaliable_amount=avaliable_amount
+    }
+
+    balance(){
+        return this.avaliable_amount
+    }
+
+    deposit(amount){
+        return this.avaliable_amount+this.amount
+    }
+
+    withdraw(amount){
+        return this.avaliable_amount-this.amount
+    }
+
+}
+
+
 
 </script>
 </body>
