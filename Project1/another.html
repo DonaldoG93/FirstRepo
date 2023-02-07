@@ -333,46 +333,48 @@ let nums = [1,2,3,3,15,6,32,81,8,19]
 // -------KLASAT------
 
 
-// let g = "aaj"
-// class Mace {
-//     constructor(rraca, mosha, ngjyra){
-//     this.rraca = rraca  
-//     this.mosha = mosha;
-//     this.ngjyra= ngjyra;
-//     this.mosha_nr=parseInt(mosha)
-//     this.fr = g
-//     }
+let g = "aaj"
+class Mace {
+    constructor(rraca, mosha, ngjyra){
+   /* this.rraca: -this. i referohet cdo objekti qe do gjenerohetnga  class Macja */
+   /* this.rraca: -rraca i gjenerohet parametrit qe do mbaje objekti i gjeneruar ku rraca eshte emri i parametrit qe do mbaje objekti por per lehtesi leximi atributet e specifikuara poshte (nga rreshti 341-343 duhet te jene emeruar njesoj si ato te definuara ne constructo rreshti 338)*/
+    this.rraca = rraca  
+    this.beba = mosha;
+    this.ngjyra= ngjyra;
+    this.mosha_nr=parseInt(mosha)
+    this.fr = g +"okok"
+    }
 
-//     sayHi(){console.log(this.rraca )}
-// }
+    sayHi(){console.log(this.rraca )}
+}
 
-// let mace = new Mace ("Persane", "22" , "black",)
-
-// console.log(mace.mosha)
+let mace = new Mace ("Persane", "22" , "black",)
+let goca =new Mace("toto",9,"greke")
+console.log(goca.mosha)
 // mace.sayHi()
 
 
 // Ushtrimi te krijohet nje klase ATM me  properties: avaliable_amount  
 // dhe methods: balance, deposit, withdraw
 
-class ATM {
-    constructor (avaliable_amount){
-        this.avaliable_amount=avaliable_amount
-    }
+// class ATM {
+//     constructor (avaliable_amount){
+//         this.avaliable_amount=avaliable_amount
+//     }
 
-    balance(){
-        return this.avaliable_amount
-    }
+//     balance(){
+//        consonle.log("")
+//     }
 
-    deposit(amount){
-        return this.avaliable_amount+this.amount
-    }
+//     deposit(amount){
+      
+//     }
 
-    withdraw(amount){
-        return this.avaliable_amount-this.amount
-    }
+//     withdraw(amount){
+        
+//     }
 
-}
+// }
 
 
 
