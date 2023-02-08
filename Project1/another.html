@@ -333,51 +333,186 @@ let nums = [1,2,3,3,15,6,32,81,8,19]
 // -------KLASAT------
 
 
-let g = "aaj"
-class Mace {
-    constructor(rraca, mosha, ngjyra){
+// let g = "aaj"
+// class Mace {
+//     constructor(rraca, mosha, ngjyra){
    /* this.rraca: -this. i referohet cdo objekti qe do gjenerohetnga  class Macja */
-   /* this.rraca: -rraca i gjenerohet parametrit qe do mbaje objekti i gjeneruar ku rraca eshte emri i parametrit qe do mbaje objekti por per lehtesi leximi atributet e specifikuara poshte (nga rreshti 341-343 duhet te jene emeruar njesoj si ato te definuara ne constructo rreshti 338)*/
-    this.rraca = rraca  
-    this.beba = mosha;
-    this.ngjyra= ngjyra;
-    this.mosha_nr=parseInt(mosha)
-    this.fr = g +"okok"
-    }
+   /* this.rraca: -rraca i referohet parametrit qe do mbaje objekti i gjeneruar ku rraca eshte emri i parametrit qe do mbaje objekti por per lehtesi leximi atributet e specifikuara poshte (nga rreshti 341-343 duhet te jene emeruar njesoj si ato te definuara ne constructor rreshti.338). */
+//     this.rraca = rraca  
+//     this.beba = mosha;
+//     this.ngjyra= ngjyra;
+//     this.mosha_nr=parseInt(mosha)
+//     this.fr = g +"okok"
+//     }
 
-    sayHi(){console.log(this.rraca )}
-}
+//     sayHi(){console.log(this.rraca )}
+// }
 
-let mace = new Mace ("Persane", "22" , "black",)
-let goca =new Mace("toto",9,"greke")
-console.log(goca.mosha)
+// let mace = new Mace ("Persane", "22" , "black",)
+// let goca =new Mace("toto",9,"greke")
+// console.log(goca.mosha)
 // mace.sayHi()
 
 
 // Ushtrimi te krijohet nje klase ATM me  properties: avaliable_amount  
 // dhe methods: balance, deposit, withdraw
 
-// class ATM {
+// class BANK {
 //     constructor (avaliable_amount){
 //         this.avaliable_amount=avaliable_amount
 //     }
 
 //     balance(){
-//        consonle.log("")
+//        console.log("Balanca juaj eshte " + this.avaliable_amount + " ALL")
 //     }
 
 //     deposit(amount){
-      
+//       if (amount < 0) throw "You can't deposit negative amount"
+//       this.avaliable_amount += parseInt(amount)
 //     }
 
 //     withdraw(amount){
-        
+//         if (amount > this.avaliable_amount) 
+//         throw `Insuficent found, your actual balance is ${this.avaliable_amount}`
+//         this.avaliable_amount -= amount 
 //     }
 
 // }
 
+// let bktatm = new BANK (1000);
+// bktatm.balance();
+// try{bktatm.deposit(-100)} catch(error){bktatm.deposit(prompt("input an amount > 0: "))}
+// bktatm.balance();
 
+
+// class ATM {
+//     constructor(amount){
+//         this.amount=amount;
+//     }
+// }
+
+
+// Ushtrim apliko norma interesi te ndryshme ne varesi te llojit te bankes qe do kete objekti 
+// class CARD {
+//     constructor(bank, avaliable_amount){
+//         this.bank=bank;
+//         this.avaliable_amount=avaliable_amount;
+//     }
+
+//     withdraw(amount){
+//         if(amount> this.avaliable_amount) throw `insuficent founds, your current balance is: ${this.avaliable_amount}`
+//         switch (this.bank) {
+//             case "bkt":
+//                 console.log(this.avaliable_amount = this.avaliable_amount - (amount * 1.2));
+//                 break;
+
+//                 case "union":
+//                 console.log(this.avaliable_amount = this.avaliable_amount - (amount * 1.05));
+//                 break;
+
+//             default:
+//             console.log(this.avaliable_amount = this.avaliable_amount - (amount * 1.1));
+//                 break;
+//         }
+//     }
+    
+// }
+
+// let bktc = new CARD ("intesa", 1000);
+
+// try{bktc.withdraw(90.9009)} catch(error){console.log(error)}
+
+// let une = {
+//     name: "Donaldo",
+//     surname:"Germenji",
+//     datelindja: 1993,
+//     mosha: function(){
+//         return console.log(new Date().getFullYear()- this.datelindja)
+//         }
+//     }
+
+
+    
+//     une.mosha();
+
+
+// **********OBJECT calculated attributes *********
+// let mrroklla = "donaldo"
+
+// let obj ={
+//     a: 5,
+//     b: 10,
+//     [mrroklla]:"jarli"
+// }
+
+// console.log(obj.donaldo)
+
+// session 23 home works
+
+// 1. Të shkruhet funksioni që elementet në pozicione çifte të një vektori i zëvendëson me numrin zero 
+
+// p.sh
+// let nums = [10, 54, 34, 8, 14, 12, 35, 21, 66];
+// // index:       0    1    2    3   4    5     6    7    8 
+// console.log(evenToZero(nums))      Dalja: [0, 54, 0, 8, 0, 12, 0, 21, 0]
+
+
+// 2. Të shkruhet program që simulon funksionalitetin e metodës map() 
+
+
+// 3. Të krijohen konstantet a dhe b që marrin vlerat 10 dhe ‘john’ përmes të destrukturimit të vektorit
+
+// function f() {
+//     return [[3, 4], ['john'], 10, '10', 'john']
+// }
+
+// // kodi yt (shkruaje kodin e destruktirimit këtu)
+
+// // dalja
+// console.log(a)    // 10
+// console.log(b)    // 'john'
+
+
+// 4. Të gjenerohet dalja si më poshtë duke përdorur konceptin template literal
+
+// let name = ‘Arta’
+// let r = 5
+// const PI = 3.14
+
+// Dalja:
+// Arta kalkuloi perimetrin e rrethit me rreze 5 cm dhe fitoi rezultatin 31.400000000000002
+
+
+// 5. Të shkruhet programi që simulon punën e ATM-it (bankomatit) përmes përdorimit të koncepteve të programimit të orientuar në objekte
+
+// Atributet:  available_amount
+// Metodat:   status(), withdraw(amount), deposit(amount) 
+// -------------------------
+
+// 1. Të plotësohet programi në atë mënyrë që vlera e variablave a dhe b të jetë si në vijim:
+
+// const student = {
+//     name: "John",
+//     age: 20,
+//     grades: [10,8,10,9,6]
+// }
+
+// // shkruaj kodin
+
+// console.log(a)    // 20
+// console.log(b)    // John
+
+// 2. Cila është dalja e programit në vijim:
+
+// const student = {
+//     name: "John",
+//     age: 20,
+//     grades: [10,8,10,9,6]
+// }
+
+// const {name: emri = 'Dea', age} = {age: student.age}
+
+// 3. Të krijohet moduli Square me funksionet për llogaritjen e perimetrit dhe syprinës së katrorit, dhe i njejti të importohet dhe përdoret në një skedë (file) tjetër. 
 
 </script>
-</body>
-</html>
+</boDy>
