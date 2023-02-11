@@ -538,16 +538,16 @@
 
 // 1. Të plotësohet programi në atë mënyrë që vlera e variablave a dhe b të jetë si në vijim:
 
-const student = {
-    name: "John",
-    age: 20,
-    grades: [10,8,10,9,6]
-}
+// const student = {
+//     name: "John",
+//     age: 20,
+//     grades: [10,8,10,9,6]
+// }
 
 
-const {name:b, age: a} = student
+// const {name:b, age: a} = student
 
-console.log(b,a)
+// console.log(b,a)
 // // shkruaj kodin
 
 // console.log(a)    // 20
@@ -564,6 +564,51 @@ console.log(b,a)
 // const {name: emri = 'Dea', age} = {age: student.age}
 
 // 3. Të krijohet moduli Square me funksionet për llogaritjen e perimetrit dhe syprinës së katrorit, dhe i njejti të importohet dhe përdoret në një skedë (file) tjetër. 
+
+
+// 4.te gjenden studentet me noten me te madhe se 8
+
+let students = [
+    {name: "donaldo", grade: 10},
+    {name: "jarli", grade: 9},
+    {name: "botti", grade: 9},
+    {name: "cimi", grade: 8},
+    {name: "luco", grade: 4}
+
+    ]
+
+// ********** me for loop **********
+// for(let i = 0; i<students.length; i++){
+//     if(students[i].grade>8) {console.log(students[i])}
+// }
+
+// ********** me filter **********
+
+// console.log(students.filter(n=> n.grade>8))
+
+// 4.2 te gjendet nota mesatare e grupit per studentet e mesiperm
+// **** me for loop***** 
+
+// let m=0;
+// for (let i=0; i<students.length; i++){
+    
+//   m+=students[i].grade
+// }
+
+// console.log(m/students.length-1)
+
+// me reduce
+
+// console.log(students.reduce((a,b) => a + b.grade, 0)/students.length -1);
+
+// console.log("reprod " +args.reduce((a,b) => b*=a));
+
+
+// te gjenden stuendet ku emri eshte me i gjate se 4 chars
+
+// direkt me filter
+console.log(students.filter(n=> n.name.length>4))
+
 
 </script>
 </boDy>
