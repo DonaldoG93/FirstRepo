@@ -538,12 +538,16 @@
 
 // 1. Të plotësohet programi në atë mënyrë që vlera e variablave a dhe b të jetë si në vijim:
 
-// const student = {
-//     name: "John",
-//     age: 20,
-//     grades: [10,8,10,9,6]
-// }
+const student = {
+    name: "John",
+    age: 20,
+    grades: [10,8,10,9,6]
+}
 
+
+const {name:b, age: a} = student
+
+console.log(b,a)
 // // shkruaj kodin
 
 // console.log(a)    // 20
