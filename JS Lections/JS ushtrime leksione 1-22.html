@@ -732,28 +732,39 @@
 
 // shembulli me async await
 
-let divide = (x,y) => {
-  return new Promise ((resolved, rejected)=>{
-    if(x === 0 || y === 0 )
-      rejected(`x ose y duhet te jene te ndryshme nga numri 0`)
-    else
-      resolved (x/y)
-  })
+// let divide = (x,y) => {
+//   return new Promise ((resolved, rejected)=>{
+//     if(x === 0 || y === 0 )
+//       rejected(`x ose y duhet te jene te ndryshme nga numri 0`)
+//     else
+//       resolved (x/y)
+//   })
+// }
+
+// async function run() {
+//   try {
+//     const res = await divide(6, 2);
+//     console.log(res);
+//     const res2 = res * 2;
+//     console.log(res2);
+//     document.write(`rezultati final eshte ${res2}`);
+//   } catch (err) {
+//     console.log(4 + err);
+//   }
+// }
+
+// run();
+
+let a =2 
+let b =4
+let p = 1
+
+for (i=0; i<b; i++){
+    
+    p=p*a
+    console.log(`per i:${i} p= ${p}`)
 }
 
-async function run() {
-  try {
-    const res = await divide(6, 2);
-    console.log(res);
-    const res2 = res * 2;
-    console.log(res2);
-    document.write(`rezultati final eshte ${res2}`);
-  } catch (err) {
-    console.log(4 + err);
-  }
-}
-
-run();
 
 
 
