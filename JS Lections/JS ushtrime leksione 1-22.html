@@ -9,8 +9,8 @@
 <body>
     
 
-<script src="./Promises.js">
-
+<!-- <script src="./Promises.js"> -->
+<script>
 // let power = (a,b) =>{
 //   let result = 1 ;
 //   for (let i =0; i<b; i++){
@@ -638,5 +638,126 @@
 // }
 
 // checkInput();
+
+
+
+// console.log("START")
+
+// let i = 0
+
+// setInterval(()=>{
+ 
+//     i++
+//     console.log(`live i: ${i}`)},
+//     1000)
+
+
+// async function f(x, y){
+//     const divide = new Promise ((resolved, rejected)=>{
+//         if(y>0) {
+//             setTimeout(() => {
+//                 resolved(x/y)
+//             }, 5000);
+//         }else{
+//             rejected("Y duhet te jete i ndryshem nga 0")
+//             return
+//         }
+//     })
+
+//     console.log(await divide)
+// }
+
+// console.log("END")
+
+// f(5,2)
+
+
+// console.log("START")
+
+// let i = 0
+
+// setInterval(()=>{
+ 
+//     i++
+//     console.log(`live i: ${i}`)},
+//     1000)
+
+
+// function f(x, y){
+    
+//         if(y>0) {
+//           return setTimeout(() => {
+//             x/y
+//           }, 5000);        }
+//         else{
+//            console.log("Y duhet te jete i ndryshem nga 0")
+            
+//         }
+        
+//     }
+
+    
+
+
+// console.log("END")
+
+// console.log(f(6,2))
+
+
+// shembulli me promise
+// let divide = (x,y) => {
+//     return new Promise ((resolved, rejected)=>{
+
+//     if(x === 0 || y === 0 )
+
+//     rejected(`x ose y duhet te jene te ndryshme nga numri 0`)
+//     else resolved (x/y)})}
+        
+ 
+
+// divide (6,2)
+// .then(res => {
+// console.log(res);
+//  return res;
+// })
+// .then(res2=> {
+//     console.log(res2 * 2)
+//     return res2 *2
+//  })
+//  .then(finalres=> {
+//     document.write(`rezultati final eshte ${finalres}`)
+//  })
+// .catch(err => console.log(4+err ))
+
+
+// shembulli me async await
+
+let divide = (x,y) => {
+  return new Promise ((resolved, rejected)=>{
+    if(x === 0 || y === 0 )
+      rejected(`x ose y duhet te jene te ndryshme nga numri 0`)
+    else
+      resolved (x/y)
+  })
+}
+
+async function run() {
+  try {
+    const res = await divide(6, 2);
+    console.log(res);
+    const res2 = res * 2;
+    console.log(res2);
+    document.write(`rezultati final eshte ${res2}`);
+  } catch (err) {
+    console.log(4 + err);
+  }
+}
+
+run();
+
+
+
+
+
 </script>
 </boDy>

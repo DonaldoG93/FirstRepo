@@ -67,9 +67,9 @@
 
 // p.then(detail => console.log("po plak") ).catch(error => console.log("po jari po"))
 
-let a =setTimeout(function ()return 4, 4000)
+// let a =setTimeout(function ()return 4, 4000)
 
-console.log(a())
+// console.log(a())
 
 
  
