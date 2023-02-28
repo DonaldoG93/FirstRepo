@@ -27,7 +27,7 @@
 
 //    then return a *factorial (5-1);  /*a=4 */
 //  ///           5 * factorial (4) 
-// 2 is (a == 0 || a == 1) => No  
+// 2. is (a == 0 || a == 1) => No  
 //    then return  a *factorial (4-1);  /*a=3 */
 // ///             4 * factorial (3) 
 

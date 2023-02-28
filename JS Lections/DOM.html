@@ -34,30 +34,51 @@
 
 <script>
 
-    // const t = document.getElementsByTagName("p")
-    // console.dir(Array.from(t))
-    // t.innerText = "Welcome Home"
-    // // t.style.backgroundColor = "orange"
-    // // t.style.border = "3px solid green"
     
-    // let p = document.getElementsByTagName("p")
+    let t = document.getElementById("tittle")
+    console.dir(t)
+    t.innerText = "Welcome Home"
+    // t.style.backgroundColor = "orange"
+    t.style.borderBottom = "3px solid green"
+    // t.style.backgroundColor = "violet"
+    t.style.textAlign="center" 
+
+    const p = Array.from(document.getElementsByTagName("p"))
     // console.dir(p)
-    // p[1].style.backgroundColor="yellow"
+    console.log(p)
 
-    // let li = document.querySelectorAll("li")
-    // console.log(li)
-    // li[0].style.backgroundColor="green"
+    p.forEach(element => {
+        element.style.backgroundColor =" yellow"
+    });
+ 
 
-let t = document.getElementById("tittle")
 
-t.style.backgroundColor = "violet"
-t.style.textAlign="center" 
+    let li = document.querySelectorAll("li")
+    console.log(li)
+
+    li.forEach(element => {
+        element.style.paddingBottom =" 15px"
+    });
+
+
+    console.log(Array.from(li))
+
 
 let span = document.createElement("span")
 let spantext= document.createTextNode("2 my life")
 
 t.append(span)
-span.append(spantext)
+// span.append(spantext)
+
+
+
+
+
+
+
+
+
+
 
 
 </script>
