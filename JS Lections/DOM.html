@@ -35,40 +35,71 @@
 <script>
 
     
-    let t = document.getElementById("tittle")
-    console.dir(t)
-    t.innerText = "Welcome Home"
-    // t.style.backgroundColor = "orange"
-    t.style.borderBottom = "3px solid green"
-    // t.style.backgroundColor = "violet"
-    t.style.textAlign="center" 
+//     let t = document.getElementById("tittle")
+//     console.dir(t)
+//     t.innerText = "Welcome Home"
+//     // t.style.backgroundColor = "orange"
+//     t.style.borderBottom = "3px solid green"
+//     // t.style.backgroundColor = "violet"
+//     t.style.textAlign="center" 
 
-    const p = Array.from(document.getElementsByTagName("p"))
-    // console.dir(p)
-    console.log(p)
+//     const p = Array.from(document.getElementsByTagName("p"))
+//     // console.dir(p)
+//     console.log(p)
 
-    p.forEach(element => {
-        element.style.backgroundColor =" yellow"
-    });
+//     p.forEach(element => {
+//         element.style.backgroundColor =" yellow"
+//     });
  
 
 
-    let li = document.querySelectorAll("li")
-    console.log(li)
+//     let li = document.querySelectorAll("li")
+//     console.log(li)
 
-    li.forEach(element => {
-        element.style.paddingBottom =" 15px"
-    });
-
-
-    console.log(Array.from(li))
+//     li.forEach(element => {
+//         element.style.paddingBottom =" 15px"
+//     });
 
 
-let span = document.createElement("span")
-let spantext= document.createTextNode("2 my life")
+//     console.log(Array.from(li))
 
-t.append(span)
-// span.append(spantext)
+
+// let span = document.createElement("span")
+// let spantext= document.createTextNode("2 my life")
+
+// t.append(span)
+// // span.append(spantext)
+
+
+// Function that simulates an asynchronous operation
+function asyncOperation() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("Async operation complete!");
+    }, 1000);
+  });
+}
+
+// Use setInterval() to repeatedly call the async operation
+const intervalId = setInterval(async () => {
+  try {
+    const result = await asyncOperation();
+    console.log(result);
+  } catch (err) {
+    console.error(err);
+  }
+}, 3000);
+
+// Stop the interval after 10 seconds
+setTimeout(() => {
+  clearInterval(intervalId);
+}, 15000);
+
+setTimeout(() => {
+  console.log("other 4 secs");
+}, 4020);
+
+
 
 
 
